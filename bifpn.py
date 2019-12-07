@@ -38,7 +38,7 @@ def conv_act_layer(from_layer, name, num_filter, kernel=(1,1), pad=(0,0), \
 
 
 def bifpn(layers, dest_channels):
-    compose_layers = [i for i in range(0, 5)]
+    compose_layers = [i for i in range(0, len(layers))]
 
     trans_layers = []
     for i, layer in enumerate(layers):
